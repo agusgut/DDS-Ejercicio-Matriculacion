@@ -17,7 +17,76 @@
       <a href="/page2.html">Other page</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <h1>Formulario de Matriculación de Estudiantes</h1>
     </main>
+      <form method="get" action="clase">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <div>
+          <label for="fecha_nacimiento">Fecha de nacimiento</label>
+          <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+        <div>
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" name="edad" required>
+        </div>
+        <div>
+          <label for="genero">Genero:</label>
+          <div>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="Masculino" required>
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="feminino" name="genero" value="Femenino" required>
+            <label for="otro">Otro</label>
+            <input type="radio" id="otro" name="genero" value="Otro" required>
+          </div>
+        </div>
+        <div>
+          <label for="materia_fav">Materia Favorita:</label>
+          <select name="materia_fav" id="materia_fav" required>
+            <option value="AGA">Algebra y Geometria Analítica</option>
+            <option value="MAD">Matemática Discreta</option>
+            <option value="SOR">Sistemas y Organizaciones</option>
+            <option value="ACO">Arquitectura de computadoras</option>
+            <option value="SOP">Sistemas Operativos</option>
+            <option value="BDA">Base de datos</option>
+            <option value="DDS">Desarrollo de Software</option>
+            <option value="DSI">Diseño de sistemas</option>
+          </select>
+        </div>
+        <div>
+          <label for="habilidades">Habilidades:</label>
+          <div>
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="habilidades" value="python">
+            <label for="smalltalk">Smalltalk</label>
+            <input type="checkbox" id="smalltalk" name="habilidades" value="smalltalk">
+            <label for="haskell">Haskell</label>
+            <input type="checkbox" id="haskell" name="habilidades" value="haskell">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="habilidades" value="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="habilidades" id="css" value="css">
+          </div>
+        </div>
+          <div>
+            <label for="interes">Nivel de interes</label>
+            <div>
+              <label for="bajo">Bajo</label>
+              <input type="radio" id="bajo" name="interes" value="bajo" required>
+              <label for="medio">Medio</label>
+              <input type="radio" id="medio" name="interes" value="medio" required>
+              <label for="alto">Alto</label>
+              <input type="radio" id="alto" name="interes" value="alto" required>
+            </div>
+          </div>
+        <div>
+          <label for="comentario">Comentarios adicionales sobre el estudiante:</label>
+          <textarea name="comentario" id="comentario" cols="50" rows="3"></textarea>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
   </body>
 </html>
